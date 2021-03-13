@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         lexarflash8g/jx3-eks-vault: true
+        lexarflash8g/none: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         lexarflash8g/jx3-eks-vault: merge
+        lexarflash8g/none: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - lexarflash8g/jx3-eks-vault
+        - lexarflash8g/none
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - lexarflash8g/jx3-eks-vault
+        - lexarflash8g/none
       target_url: http://dashboard-jx.52.53.71.84.nip.io
 kind: ConfigMap
 metadata:
