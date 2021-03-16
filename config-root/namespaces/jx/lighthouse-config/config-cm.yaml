@@ -7,8 +7,11 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        lexarflash8g/hello-world2: true
         lexarflash8g/jx3-eks-vault: true
         lexarflash8g/none: true
+        lexarflash8g/python-flask-docker: true
+        lexarflash8g/python-flask-docker2: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,8 +23,11 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        lexarflash8g/hello-world2: merge
         lexarflash8g/jx3-eks-vault: merge
         lexarflash8g/none: merge
+        lexarflash8g/python-flask-docker: merge
+        lexarflash8g/python-flask-docker2: merge
       queries:
       - labels:
         - approved
@@ -33,7 +39,10 @@ data:
         - needs-rebase
         repos:
         - lexarflash8g/jx3-eks-vault
+        - lexarflash8g/hello-world2
         - lexarflash8g/none
+        - lexarflash8g/python-flask-docker
+        - lexarflash8g/python-flask-docker2
       - labels:
         - updatebot
         missingLabels:
@@ -44,7 +53,10 @@ data:
         - needs-rebase
         repos:
         - lexarflash8g/jx3-eks-vault
+        - lexarflash8g/hello-world2
         - lexarflash8g/none
+        - lexarflash8g/python-flask-docker
+        - lexarflash8g/python-flask-docker2
       target_url: http://dashboard-jx.52.53.71.84.nip.io
 kind: ConfigMap
 metadata:

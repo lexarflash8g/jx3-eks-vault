@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: lexarflash8g
+    provider: github
+    repository: python-flask-docker
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: lexarflash8g-python-flask-docker
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/lexarflash8g/python-flask-docker.git
+  org: lexarflash8g
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: python-flask-docker
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/lexarflash8g/python-flask-docker
