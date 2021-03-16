@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-staging
+repositories:
+- name: dev
+  url: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+releases:
+- chart: dev/python-flask-docker2
+  version: 0.0.1
+  name: python-flask-docker2
+templates: {}
+renderedvalues: {}
