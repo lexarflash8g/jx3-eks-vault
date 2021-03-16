@@ -1,0 +1,18 @@
+# Source: python-flask-docker2/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: python-flask-docker2
+  labels:
+    chart: "python-flask-docker2-0.0.1"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  namespace: jx-staging
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 8080
+      protocol: TCP
+      name: http
+  selector:
+    app: python-flask-docker2-python-flask-docker2
