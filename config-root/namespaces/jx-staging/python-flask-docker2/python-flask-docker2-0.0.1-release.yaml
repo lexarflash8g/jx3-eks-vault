@@ -1,0 +1,49 @@
+# Source: python-flask-docker2/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-03-16T01:20:33Z"
+  deletionTimestamp: null
+  name: 'python-flask-docker2-0.0.1'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.1
+      sha: fa5a55fe12f2fdd9dcd5951a36bc0b3b1bf44bc6
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: a3ae7cf4d8d808c97304d8262988f325bfea92ff
+    - author:
+        email: lexarflash8g@gmail.com
+        name: lexarflash8g
+      branch: master
+      committer:
+        email: lexarflash8g@gmail.com
+        name: lexarflash8g
+      message: |
+        chore: Jenkins X build pack
+      sha: df2fa45403108a1c641a2f73b9aecc37cb7f37e8
+  gitHttpUrl: https://github.com/lexarflash8g/python-flask-docker2
+  gitOwner: lexarflash8g
+  gitRepository: python-flask-docker2
+  name: 'python-flask-docker2'
+  releaseNotesURL: https://github.com/lexarflash8g/python-flask-docker2/releases/tag/v0.0.1
+  version: v0.0.1
+status: {}
