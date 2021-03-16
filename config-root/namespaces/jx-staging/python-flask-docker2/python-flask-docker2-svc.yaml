@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: python-flask-docker2
   labels:
-    chart: "python-flask-docker2-0.0.4"
+    chart: "python-flask-docker2-0.0.5"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
 spec:
