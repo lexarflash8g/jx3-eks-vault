@@ -1,0 +1,18 @@
+# Source: python-flask-docker2/templates/ingress.yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  name: python-flask-docker2
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  rules:
+    - http:
+        paths:
+          - backend:
+              serviceName: python-flask-docker2
+              servicePort: 80
+      host: python-flask-docker2-jx-production.52.53.71.84.nip.io
