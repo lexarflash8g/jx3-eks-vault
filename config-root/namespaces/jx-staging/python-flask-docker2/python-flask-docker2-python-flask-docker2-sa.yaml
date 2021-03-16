@@ -1,8 +1,0 @@
-# Source: python-flask-docker2/templates/sa.yaml
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: python-flask-docker2-python-flask-docker2
-  namespace: jx-staging
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
