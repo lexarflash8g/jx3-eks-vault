@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        lexarflash8g/hello-world2: true
         lexarflash8g/jx3-eks-vault: true
         lexarflash8g/none: true
     plank: {}
@@ -20,6 +21,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        lexarflash8g/hello-world2: merge
         lexarflash8g/jx3-eks-vault: merge
         lexarflash8g/none: merge
       queries:
@@ -33,6 +35,7 @@ data:
         - needs-rebase
         repos:
         - lexarflash8g/jx3-eks-vault
+        - lexarflash8g/hello-world2
         - lexarflash8g/none
       - labels:
         - updatebot
@@ -44,6 +47,7 @@ data:
         - needs-rebase
         repos:
         - lexarflash8g/jx3-eks-vault
+        - lexarflash8g/hello-world2
         - lexarflash8g/none
       target_url: http://dashboard-jx.52.53.71.84.nip.io
 kind: ConfigMap

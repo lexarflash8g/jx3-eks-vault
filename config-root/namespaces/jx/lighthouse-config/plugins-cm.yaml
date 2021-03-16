@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - lexarflash8g/hello-world2
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - lexarflash8g/none
       require_self_approval: true
     cat: {}
@@ -24,6 +28,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      lexarflash8g/hello-world2:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       lexarflash8g/jx3-eks-vault:
       - config-updater
       - approve
@@ -68,6 +88,9 @@ data:
     triggers:
     - repos:
       - lexarflash8g/jx3-eks-vault
+      trusted_org: todo
+    - repos:
+      - lexarflash8g/hello-world2
       trusted_org: todo
     - repos:
       - lexarflash8g/none
